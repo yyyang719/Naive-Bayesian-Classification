@@ -1,11 +1,13 @@
 # Naive-Bayesian-Classification
+data.txt file includes 10 tracks representing the velocity of the unidentified flying object as it was measured by a military-grade radar (1s sampling frequency for a total length of 300s). If the radar was not able to acquire the target and perform the measurement, the corresponding datapoint will be a NaN value.
+
+pdf.txt file includes the velocity probability density function (pdf) for two objects: bird and aircraft. The first row is for bird and the second row is for aircraft.
+
 I was based on the following assumptions to solve this classification problem(bird or aircraft): 
 
-1. since we are based on the naive bayesian model, observations for the given common cause
-are assumed to be conditional independent.
+1. since we are based on the naive bayesian model, observations for the given common cause are assumed to be conditional independent.
 
-2. The algorithm I used recursively did prediction with transition model from the last state, 
-then update the prediction based on the likelihood of the current observations.
+2. The algorithm I used recursively did prediction with transition model from the last state, then update the prediction based on the likelihood of the current observations.
 
 3. For our classification problem, the object is either bird or aircraft, so our state has two values.
 
