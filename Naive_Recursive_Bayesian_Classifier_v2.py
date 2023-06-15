@@ -164,7 +164,8 @@ def v_variance_pdf(data_velocity):
         delta = [abs(x) for x in row[1:] - row[:-1]] # each neighbor variance
         v_variance[i] = delta
     
-    # the known results
+    # the known results (This is an experiment part: if we had the velocity dataset for bird/aircraft, how could we generate 
+    # velocity variance pdf for them.)
     bird = [0,2,3,4,9]
     aircraft = [1,5,6,7,8]
     
